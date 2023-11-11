@@ -1,28 +1,37 @@
+
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
+import greetAndPromptUserName from './brain-games.js';
 
 const brainEven = () => {
+    greetAndPromptUserName();
     let numberOfWins = 0;
-    while (numberOfWins !== 3){
-        console.log('Answer "yes if the number is even, otherwise answer "no"');
+    let answer = '';
+    console.log('Answer "yes" if the number is even, otherwise answer "no"');
+    while (numberOfWins !== 3) {
         const currentRandomNumber = _.random(1, 100);
+        if (currentRandomNumber % 2 === 0) {
+            answer = 'yes';
+        } else {
+            answer = 'no'
+        }
         console.log(`Question ${currentRandomNumber}`);
         const answerPrompt = readlineSync.question('You answer: ');
-        if (evenOrOdd(answerPrompt) === evenOrOdd(currentRandomNumber)) {
+        if (answerPrompt == answer) {
             console.log('Correct!');
             numberOfWins += 1;
+            if (numberOfWins === 3) {
+                console.log(`Congratulations, userName!`);
+                break
+            }
         } else {
-            continue;
+            numberOfWins = 0;
+            console.log(`'${answerPrompt}' is wrong answer ;(. Correct answer was '${answer}'.`);
+            console.log("Let's try again, userName!")
+            break
         }
-    }
-    console.log(`Congratulations, ${namePrompt}!`);
+    };
+    
 };
 
-const evenOrOdd = (number) => {
-    if (number % 2 === 0) {
-        return true
-    }
-    return false;
-};
-
-brainEven
+brainEven();

@@ -13,6 +13,7 @@
   "author": "Nerio01",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^8.53.0",
     "readline-sync": "^1.4.10"
   }
 }

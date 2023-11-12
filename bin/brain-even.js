@@ -1,10 +1,10 @@
-
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
-import greetAndPromptUserName from './brain-games.js';
 
 const brainEven = () => {
-    greetAndPromptUserName();
+    const namePrompt = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${namePrompt}!`);
     let numberOfWins = 0;
     let answer = '';
     console.log('Answer "yes" if the number is even, otherwise answer "no"');
@@ -21,13 +21,13 @@ const brainEven = () => {
             console.log('Correct!');
             numberOfWins += 1;
             if (numberOfWins === 3) {
-                console.log(`Congratulations, userName!`);
+                console.log(`Congratulations, ${namePrompt}!`);
                 break
             }
         } else {
             numberOfWins = 0;
             console.log(`'${answerPrompt}' is wrong answer ;(. Correct answer was '${answer}'.`);
-            console.log("Let's try again, userName!")
+            console.log(`Let's try again, ${namePrompt}!`)
             break
         }
     };

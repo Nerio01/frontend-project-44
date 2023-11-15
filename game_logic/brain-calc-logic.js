@@ -12,22 +12,32 @@ const getRandomOperator = () => {
     
     const listOfOperators = ['+', '-', '*'];
 
-    return listOfOperators[_.random(0,2)];
+    const operator = listOfOperators[_.random(0,2)];
+
+    return operator;
 };
 
-const getExpression = (random_number1, random_number2, random_operator) => {
-    random_number1 = getRandomNumber();
-    random_number2 = getRandomNumber();
-    random_operator = getRandomOperator();
+export const getExpressionAndPrintStatement = () => {
+    const random_number1 = getRandomNumber();
+    const random_number2 = getRandomNumber();
+    const random_operator = getRandomOperator();
+    const expressionPrint = `${random_number1} ${random_operator} ${random_number2}`;
     switch (random_operator) {
         case '+': {
-            return random_number1 + random_number2;
+            return [expressionPrint, (random_number1 + random_number2)];
         };
         case '-': {
-            return random_number1 - random_number2;
+            return [expressionPrint, (random_number1 - random_number2)]
         };
         case '*': {
-            return random_number1 * random_number2;
+            return [expressionPrint, (random_number1 * random_number2)];
         };
     };
+    return null;
 };
+
+
+
+
+console.log(getRandomOperator());
+console.log(getExpressionAndPrintStatement());    

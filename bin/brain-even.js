@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import gameFlow from "../src/index.js";
 import brainEven from "../games/brain-even-logic.js";
-console.log("Welcome to the Brain Games!");
-brainEven();
+import { question_even } from "../games/brain-even-logic.js";
+
+gameFlow(brainEven, question_even);

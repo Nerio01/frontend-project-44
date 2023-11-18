@@ -3,18 +3,13 @@ import _ from 'lodash';
 export const question_calc = 'What is the result of the expression?';
 
 const getRandomNumber = () => {
-    
     const randomNumber = _.random(1,100);
-
     return randomNumber;
 };
 
 const getRandomOperator = () => {
-    
     const listOfOperators = ['+', '-', '*'];
-
     const operator = listOfOperators[_.random(0,2)];
-
     return operator;
 };
 

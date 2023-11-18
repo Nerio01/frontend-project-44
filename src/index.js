@@ -21,7 +21,7 @@ export const gameFlow = (gameLogic, startPhrase) => {
                 break
             }
         } else {
-            console.log(`${userAnswer} is the wrong answer ;(. Correct answer was ${generateGameValues[1]}.`);
+            console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${generateGameValues[1]}'.`);
             console.log(`Let's try again, ${userNamePrompt}!`);
             break;
         }

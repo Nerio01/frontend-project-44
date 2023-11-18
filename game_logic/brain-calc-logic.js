@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+export const question_calc = 'What is the result of the expression?';
+
 const getRandomNumber = () => {
     
     const randomNumber = _.random(1,100);
@@ -20,7 +22,7 @@ export const getExpressionAndPrintStatement = () => {
     const random_number1 = getRandomNumber();
     const random_number2 = getRandomNumber();
     const random_operator = getRandomOperator();
-    const expressionPrint = `${random_number1} ${random_operator} ${random_number2}`;
+    const expressionPrint = `Question: node ${random_number1} ${random_operator} ${random_number2}`;
     switch (random_operator) {
         case '+': {
             return [expressionPrint, (random_number1 + random_number2)];
@@ -35,8 +37,5 @@ export const getExpressionAndPrintStatement = () => {
     return null;
 };
 
-
-
-
-console.log(getRandomOperator());
-console.log(getExpressionAndPrintStatement());    
+export default getExpressionAndPrintStatement;
+  

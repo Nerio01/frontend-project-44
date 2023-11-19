@@ -5,5 +5,6 @@ export const greetAndPromptUserName = () => {
 console.log("Welcome to the Brain Games!");
 promptUserName();
 };
+greetAndPromptUserName();
 
-export default greetAndPromptUserName();
+export default greetAndPromptUserName;

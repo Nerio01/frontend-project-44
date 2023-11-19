@@ -10,7 +10,7 @@
 
 **brain-gcd** [![asciicast](https://asciinema.org/a/621857.svg)](https://asciinema.org/a/621857) 
 
-**brain-progression** - [![asciicast](https://asciinema.org/a/621854.svg)](https://asciinema.org/a/621854)
+**brain-progression** [![asciicast](https://asciinema.org/a/621854.svg)](https://asciinema.org/a/621854)
 
-**brain-prime** - [![asciicast](https://asciinema.org/a/621856.svg)](https://asciinema.org/a/621856)  
+**brain-prime** [![asciicast](https://asciinema.org/a/621856.svg)](https://asciinema.org/a/621856)  
 

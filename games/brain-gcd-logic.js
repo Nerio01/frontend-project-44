@@ -12,7 +12,7 @@ export const brain_gcd = () => {
     const number_1 = getRandomNumber();
     const number_2 = getRandomNumber();
     const answer = gcd(number_1, number_2);
-    const question_gcd = `Question:  ${number_1} ${number_2}`;
+    const question_gcd = `Question: ${number_1} ${number_2}`;
     return [question_gcd, answer];
 }
 

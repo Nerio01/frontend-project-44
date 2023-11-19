@@ -6,3 +6,4 @@ GAME RECORDINGS
 brain-even - https://asciinema.org/a/CO7h2BoKpOdB09t9mMfXBE3Bz
 brain-calc - TO BE ADDED
 brain-gcd - TO BE ADDED
+brain-progression - TO BE ADDED

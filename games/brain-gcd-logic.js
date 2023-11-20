@@ -9,11 +9,11 @@ const getRandomNumber = () => {
 export const gcdQuestion = 'Find the greatest common divisor of given numbers.';
 
 export const brain_gcd = () => {
-    const number1 = getRandomNumber();
-    const number2 = getRandomNumber();
-    ///const questionGcd = `Question: ${number_1} ${number_2}`;
-    const answer = gcd(number1, number2);
-    return [`Question: ${number1} ${number2}`, answer];
+    const randomNumber1 = getRandomNumber();
+    const randomNumber2 = getRandomNumber();
+    const questionGcd = `Question: ${randomNumber1} ${randomNumber2}`;
+    const answer = gcd(randomNumber1, randomNumber2);
+    return [questionGcd, answer];
 };
  
 export default brain_gcd;

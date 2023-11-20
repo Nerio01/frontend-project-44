@@ -14,6 +14,6 @@ export const brain_gcd = () => {
     const questionGcd = `Question: ${number_1} ${number_2}`;
     const answer = gcd(number_1, number_2);
     return [questionGcd, answer];
-}
+};
 
 export default brain_gcd;

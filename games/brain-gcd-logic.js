@@ -8,7 +8,7 @@ export const brain_gcd = () => {
     const randomNumber2 = _.random(1,100)
     const questionGcd = `${randomNumber1} ${randomNumber2}`
     const answer = gcd(randomNumber1, randomNumber2)
-    return [questionGcd, answer]
+    return [String(questionGcd), answer]
 };
  
 export default brain_gcd;

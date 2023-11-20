@@ -17,7 +17,7 @@ export const brain_progression = () => {
     const progression_for_player = [...progression]; 
     progression_for_player[index_from_progression] = '..';
     const delimited_string_from_progression = progression_for_player.join(' ');
-    const question_progression = `Question: ${delimited_string_from_progression}`; 
+    const question_progression = `${delimited_string_from_progression}`; 
 
     return [question_progression, number_from_progression];
 }; 

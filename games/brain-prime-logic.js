@@ -12,7 +12,7 @@ export const brain_prime = () => {
     } else {
         answer = 'no'
     }
-    const question_prime = `Question: ${generated_number}`;
+    const question_prime = `${generated_number}`;
     return [question_prime, answer];
 } 
 

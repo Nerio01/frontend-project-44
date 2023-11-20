@@ -12,7 +12,7 @@ export const makeProgression = () => {
 
 export const brain_progression = () => {
     const progression = makeProgression();
-    const index_from_progression = _.random(progression.length - 1)
+    const index_from_progression = _.random(progression.length - 1);
     const number_from_progression = progression[index_from_progression];
     const progression_for_player = [...progression]; 
     progression_for_player[index_from_progression] = '..';

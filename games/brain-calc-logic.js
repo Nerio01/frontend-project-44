@@ -18,7 +18,7 @@ export const getExpressionAndPrintStatement = () => {
             return [expressionPrint, (random_number1 + random_number2)];
         };
         case '-': {
-            return [expressionPrint, (random_number1 - random_number2)]
+            return [expressionPrint, (random_number1 - random_number2)];
         };
         case '*': {
             return [expressionPrint, (random_number1 * random_number2)];

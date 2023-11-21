@@ -14,6 +14,7 @@ export const gameFlow = (gameLogic, startPhrase) => {
         const description = generateGameValues[0];
         console.log(`Question: ${description}`);
         const userAnswer = readlineSync.question('Your answer: ');
+        
         if (userAnswer === String(generateGameValues[1])) {
             numberOfRounds += 1;
             console.log('Correct!');

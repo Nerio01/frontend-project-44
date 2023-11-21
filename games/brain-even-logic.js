@@ -11,7 +11,7 @@ export const brainEven = () => {
     } else {
         answer = 'no'
     }
-    const evenQuestion = `${currentRandomNumber}`;
+    const question_even = `${currentRandomNumber}`;
 
-    return [evenQuestion, answer];    
+    return [question_even, answer];    
 };

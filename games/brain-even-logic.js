@@ -1,6 +1,5 @@
 import _ from 'lodash';
 
-
 export const start_phrase_even = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 export const brainEven = () => {

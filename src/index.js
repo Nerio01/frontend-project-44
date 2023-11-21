@@ -28,4 +28,3 @@ export const gameFlow = (gameLogic, startPhrase) => {
         }
     };
 };
-export default gameFlow;

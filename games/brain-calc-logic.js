@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-export const question_calc = 'What is the result of the expression?';
+export const start_phrase_calc = 'What is the result of the expression?';
 
 const getRandomOperator = () => {
     const listOfOperators = ['+', '-', '*'];
@@ -8,7 +8,7 @@ const getRandomOperator = () => {
     return operator;
 };
 
-export const getExpressionAndPrintStatement = () => {
+export const brain_calc = () => {
     const random_number1 = _.random(1,100);
     const random_number2 = _.random(1,100);
     const random_operator = getRandomOperator();
@@ -24,8 +24,7 @@ export const getExpressionAndPrintStatement = () => {
             return [expressionPrint, (random_number1 * random_number2)];
         };
     };
+    
     return null;
 };
-
-export default getExpressionAndPrintStatement;
   

@@ -1,14 +1,15 @@
 import _ from "lodash";
 
-export const progQuestion = 'What number is missing in the progression?';
+export const start_phrase_progression = 'What number is missing in the progression?';
 
-export const makeProgression = () => {
+const makeProgression = () => {
     const modifier = _.random(2, 10);
     const first_number = _.random(1, 50);
     const full_progression = _.range(first_number, 200, modifier);
     const sliced_progression = full_progression.slice(0, 10);
+
     return sliced_progression;
-}
+};
 
 export const brain_progression = () => {
     const progression = makeProgression();
@@ -22,5 +23,4 @@ export const brain_progression = () => {
     return [question_progression, number_from_progression];
 }; 
 
-export default brain_progression;
 

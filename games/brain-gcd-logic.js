@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import { gcd } from 'mathjs';
 
-export const gcdQuestion = 'Find the greatest common divisor of given numbers.';
+export const start_phrase_gcd = 'Find the greatest common divisor of given numbers.';
 
 export const brain_gcd = () => {
     const randomNumber1 = _.random(1,100);
@@ -11,4 +11,3 @@ export const brain_gcd = () => {
     return [question_gcd, answer];
 };
  
-export default brain_gcd;

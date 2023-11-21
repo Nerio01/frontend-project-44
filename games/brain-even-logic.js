@@ -1,23 +1,17 @@
 import _ from 'lodash';
 
-const getRandomNumber = () => {
-    const randomNumber = _.random(1,100);
-    return randomNumber;
-};
 
-export const question_even = 'Answer "yes" if the number is even, otherwise answer "no"';
+export const start_phrase_even = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 export const brainEven = () => {
     let answer = '';
-    const currentRandomNumber = getRandomNumber();
+    const currentRandomNumber = _.random(1,100);
     if (currentRandomNumber % 2 === 0) {
         answer = 'yes';
     } else {
-         answer = 'no'
+        answer = 'no'
     }
     const evenQuestion = `${currentRandomNumber}`;
+
     return [evenQuestion, answer];    
 };
-    
-
-export default brainEven;

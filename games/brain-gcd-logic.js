@@ -8,6 +8,7 @@ export const brain_gcd = () => {
     const randomNumber2 = _.random(1,100);
     const question_gcd = `${randomNumber1} ${randomNumber2}`; 
     const answer = gcd(randomNumber1, randomNumber2);
+    
     return [question_gcd, answer];
 };
  

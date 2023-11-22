@@ -1,7 +1,0 @@
-GENERAL PROJECT REQUIREMENTS
-
-1) during whole project use --dry-run argument in order no to bloat 
-   common repo with training packages 
-2) for global installation of package fro local dir use `npm link` command 
-   it needs to be started from project root directory!
-

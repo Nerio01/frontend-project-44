@@ -12,7 +12,8 @@ export const gameFlow = (gameLogic, startPhrase) => {
     while (numberOfRounds !== maxRounds) {
         const generateGameValues = gameLogic();
         const description = generateGameValues[0];
-        console.log("Question:", description);
+        const new_question = ("Question:", description);
+        console.log(new_question);
         const userAnswer = readlineSync.question('Your answer: ');
         
         if (userAnswer === String(generateGameValues[1])) {

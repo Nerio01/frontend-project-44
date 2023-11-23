@@ -1,9 +1,8 @@
 import _ from 'lodash';
 import { isPrime } from 'mathjs';
 
-export const startPhrasePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-export const brainPrime = () => {
+export default () => {
+  const startPhrasePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const generatedNumber = _.random(1, 100);
   const primeCheck = isPrime(generatedNumber);
   let answer = '';
@@ -13,5 +12,5 @@ export const brainPrime = () => {
     answer = 'no';
   }
   const questionPrime = `${generatedNumber}`;
-  return [questionPrime, answer];
+  return [startPhrasePrime, questionPrime, answer];
 };

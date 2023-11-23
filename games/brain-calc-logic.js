@@ -9,21 +9,22 @@ const getRandomOperator = () => {
 };
 
 export const brainCalc = () => {
-  const random_number1 = _.random(1, 100);
-  const random_number2 = _.random(1, 100);
-  const random_operator = getRandomOperator();
-  const expressionPrint = `${random_number1} ${random_operator} ${random_number2}`;
-  switch (random_operator) {
+  const randomNumber1 = _.random(1, 100);
+  const randomNumber2 = _.random(1, 100);
+  const randomOperator = getRandomOperator();
+  const expressionPrint = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
+  switch (randomOperator) {
     case '+': {
-      return [expressionPrint, (random_number1 + random_number2)];
+      return [expressionPrint, (randomNumber1 + randomNumber2)];
     }
     case '-': {
-      return [expressionPrint, (random_number1 - random_number2)];
+      return [expressionPrint, (randomNumber1 - randomNumber2)];
     }
     case '*': {
-      return [expressionPrint, (random_number1 * random_number2)];
+      return [expressionPrint, (randomNumber1 * randomNumber2)];
+    }
+    default: {
+      return null;
     }
   }
-
-  return null;
 };

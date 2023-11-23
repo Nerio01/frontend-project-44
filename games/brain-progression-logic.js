@@ -1,24 +1,24 @@
 import _ from 'lodash';
 
-export const start_phrase_progression = 'What number is missing in the progression?';
+export const startPhraseProgression = 'What number is missing in the progression?';
 
 const makeProgression = () => {
   const modifier = _.random(2, 10);
-  const first_number = _.random(1, 50);
-  const full_progression = _.range(first_number, 200, modifier);
-  const sliced_progression = full_progression.slice(0, 10);
+  const firstNumber = _.random(1, 50);
+  const fullProgression = _.range(firstNumber, 200, modifier);
+  const slicedProgression = fullProgression.slice(0, 10);
 
-  return sliced_progression;
+  return slicedProgression;
 };
 
-export const brain_progression = () => {
+export const brainProgression = () => {
   const progression = makeProgression();
-  const index_from_progression = _.random(progression.length - 1);
-  const number_from_progression = progression[index_from_progression];
-  const progression_for_player = [...progression];
-  progression_for_player[index_from_progression] = '..';
-  const delimited_string_from_progression = progression_for_player.join(' ');
-  const question_progression = `${delimited_string_from_progression}`;
+  const indexFromProgression = _.random(progression.length - 1);
+  const numberFromProgression = progression[indexFromProgression];
+  const progressionForPlayer = [...progression];
+  progressionForPlayer[indexFromProgression] = '..';
+  const delimitedStringFromProgression = progressionForPlayer.join(' ');
+  const questionProgression = `${delimitedStringFromProgression}`;
 
-  return [question_progression, number_from_progression];
+  return [questionProgression, numberFromProgression];
 };

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-export const start_phrase_even = 'Answer "yes" if the number is even, otherwise answer "no"';
+export const startPhraseEven = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 export const brainEven = () => {
   let answer = '';
@@ -10,7 +10,7 @@ export const brainEven = () => {
   } else {
     answer = 'no';
   }
-  const question_even = currentRandomNumber;
+  const questionEven = currentRandomNumber;
 
-  return [question_even, answer];
+  return [questionEven, answer];
 };

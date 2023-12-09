@@ -7,24 +7,29 @@ export default (gameLogic) => {
   console.log('Welcome to the Brain Games!');
   const userNamePrompt = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userNamePrompt}!`);
-  const startPhraseLine = gameLogic();
-  console.log(startPhraseLine[0]);
+  let startPhraseUsed = 0;
 
   while (numberOfRounds !== maxRounds) {
-    const generateGameValues = gameLogic();
-    console.log(`Question: ${generateGameValues[1]}`);
+    const [startPhraseLine, questionLine, trueAnswer] = gameLogic();
+    if (startPhraseUsed === 0) {
+      console.log(startPhraseLine);
+    }
+    console.log(`Question: ${questionLine}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === String(generateGameValues[2])) {
+    if (userAnswer === String(trueAnswer)) {
       numberOfRounds += 1;
       console.log('Correct!');
+      startPhraseUsed = 1;
       if (numberOfRounds === maxRounds) {
         console.log(`Congratulations, ${userNamePrompt}!`);
+        startPhraseUsed = 0;
         break;
       }
     } else {
-      console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${generateGameValues[2]}'.`);
+      console.log(`'${userAnswer}' is the wrong answer ;(. Correct answer was '${trueAnswer}'.`);
       console.log(`Let's try again, ${userNamePrompt}!`);
+      startPhraseUsed = 0;
       break;
     }
   }

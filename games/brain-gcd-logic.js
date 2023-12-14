@@ -4,7 +4,7 @@ const gcdCalc = (number1, number2) => {
   let absNumber1 = Math.abs(number1);
   let absNumber2 = Math.abs(number2);
   if (absNumber1 === 0) {
-    return absNumber2
+    return absNumber2;
   }
   if (absNumber2 === 0) {
     return absNumber1;
@@ -17,7 +17,7 @@ const gcdCalc = (number1, number2) => {
   }
 
   return absNumber1;
-}
+};
 
 export default () => {
   const startPhraseGcd = 'Find the greatest common divisor of given numbers';

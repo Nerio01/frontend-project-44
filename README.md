@@ -2,18 +2,29 @@
 [![Actions Status](https://github.com/Nerio01/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Nerio01/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b5a033d18b26753bdf80/maintainability)](https://codeclimate.com/github/Nerio01/frontend-project-44/maintainability)
 
-### BRAIN GAMES
+## BRAIN GAMES
 
 This is my first project on hexlet javascript course. 
 
-This project consists of 5 math games for users to hone their math chops (although very basic ones).
+This project consists of 5 math games for users to hone their math chops.
 
-To run this project you need: 
+*To run this project you need:* 
 
-1) Anything that can at least run any OS like Linux, Windown or MacOS.
-2) node js installed?
+1) Anything that can at least run a conventional OS like Linux, Windows or MacOS.
+2) Node JS installed. You can download it from the official Node.js (https://nodejs.org/) and follow the installation instructions based on your operating system.
+3) From project folder open console and run command `make install`.
+4) Then run command `npx link` 
+5) Now you can start CLI games by typing one of the following in console:
+- `brain-calc`
+- `brain-even`
+- `brain-gcd`
+- `brain-progression`
+- `brain-prime`
+6) Go ahead and try it out!
 
-**GAME RECORDINGS**  
+***Below are examples of each game for your reference:***
+
+### **GAME RECORDINGS**  
 
 **brain-even**  [![asciicast](https://asciinema.org/a/621853.svg)](https://asciinema.org/a/621853) 
 

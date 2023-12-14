@@ -23,7 +23,7 @@ export default () => {
       return [startPhraseCalc, expressionPrint, (randomNumber1 * randomNumber2)];
     }
     default: {
-      return null;
+      return 'something went very wrong here';
     }
   }
 };

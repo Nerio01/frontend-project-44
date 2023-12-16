@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Nerio01/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Nerio01/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b5a033d18b26753bdf80/maintainability)](https://codeclimate.com/github/Nerio01/frontend-project-44/maintainability)
 
-## BRAIN GAMES
+## MIND GAMES
 
 This is my first project on hexlet javascript course. 
 
@@ -20,7 +20,8 @@ This project consists of 5 math games for users to hone their math chops.
 - `brain-gcd`
 - `brain-progression`
 - `brain-prime`
-6) Go ahead and try it out!
+
+Go ahead and try it out!
 
 ***Below are examples of each game for your reference:***
 

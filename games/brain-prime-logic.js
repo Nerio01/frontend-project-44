@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import random from '../src/utilities.js';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -14,7 +14,7 @@ const isPrime = (number) => {
 
 export default () => {
   const startPhrasePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  const generatedNumber = _.random(1, 100);
+  const generatedNumber = random(1, 100);
   const primeCheck = isPrime(generatedNumber);
   let answer = '';
   if (primeCheck === true) {

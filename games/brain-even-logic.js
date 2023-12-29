@@ -1,9 +1,9 @@
-import _ from 'lodash';
+import random from '../src/utilities.js'
 
 export default () => {
   const startPhraseEven = 'Answer "yes" if the number is even, otherwise answer "no"';
   let answer = '';
-  const currentRandomNumber = _.random(1, 100);
+  const currentRandomNumber = random(1, 100);
   if (currentRandomNumber % 2 === 0) {
     answer = 'yes';
   } else {

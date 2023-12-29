@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import random from '../src/utilities.js';
 
 const gcdCalc = (number1, number2) => {
   let absNumber1 = Math.abs(number1);
@@ -21,8 +21,8 @@ const gcdCalc = (number1, number2) => {
 
 export default () => {
   const startPhraseGcd = 'Find the greatest common divisor of given numbers';
-  const randomNumber1 = _.random(1, 100);
-  const randomNumber2 = _.random(1, 100);
+  const randomNumber1 = random(1, 100);
+  const randomNumber2 = random(1, 100);
   const questionGcd = `${randomNumber1} ${randomNumber2}`;
   const answer = gcdCalc(randomNumber1, randomNumber2);
 

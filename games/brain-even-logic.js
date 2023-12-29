@@ -1,4 +1,4 @@
-import random from '../src/utilities.js'
+import random from '../src/utilities.js';
 
 export default () => {
   const startPhraseEven = 'Answer "yes" if the number is even, otherwise answer "no"';

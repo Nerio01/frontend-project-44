@@ -19,5 +19,5 @@ export default () => {
   const delimitedStringFromProgression = progressionForPlayer.join(' ');
   const questionProgression = `${delimitedStringFromProgression}`;
 
-  return [startPhraseProgression, questionProgression, numberFromProgression];
+  return [startPhraseProgression, questionProgression, String(numberFromProgression)];
 };

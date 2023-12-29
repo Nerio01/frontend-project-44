@@ -14,13 +14,13 @@ export default () => {
   const expressionPrint = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
   switch (randomOperator) {
     case '+': {
-      return [startPhraseCalc, expressionPrint, (randomNumber1 + randomNumber2)];
+      return [startPhraseCalc, expressionPrint, String(randomNumber1 + randomNumber2)];
     }
     case '-': {
-      return [startPhraseCalc, expressionPrint, (randomNumber1 - randomNumber2)];
+      return [startPhraseCalc, expressionPrint, String(randomNumber1 - randomNumber2)];
     }
     case '*': {
-      return [startPhraseCalc, expressionPrint, (randomNumber1 * randomNumber2)];
+      return [startPhraseCalc, expressionPrint, String(randomNumber1 * randomNumber2)];
     }
     default: {
       return 'something went very wrong here';

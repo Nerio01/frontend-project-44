@@ -26,5 +26,5 @@ export default () => {
   const questionGcd = `${randomNumber1} ${randomNumber2}`;
   const answer = gcdCalc(randomNumber1, randomNumber2);
 
-  return [startPhraseGcd, questionGcd, answer];
+  return [startPhraseGcd, questionGcd, String(answer)];
 };

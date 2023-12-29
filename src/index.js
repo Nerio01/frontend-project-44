@@ -17,7 +17,7 @@ export default (gameLogic) => {
     console.log(`Question: ${questionLine}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === String(trueAnswer)) {
+    if (userAnswer === trueAnswer) {
       numberOfRounds += 1;
       console.log('Correct!');
       startPhraseUsed = 1;

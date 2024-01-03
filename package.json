@@ -3,7 +3,6 @@
   "type": "module",
   "version": "1.0.0",
   "description": "My first hexlet project (JS frontend)",
-  "main": "src/index.js",
   "bin": {
     "brain-calc": "bin/brain-calc.js",
     "brain-even": "bin/brain-even.js",
@@ -11,9 +10,6 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-prime": "bin/brain-prime.js",
     "brain-progression": "bin/brain-progression.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nerio01",
   "license": "ISC",
@@ -25,7 +21,6 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint-plugin-jest": "^27.6.0",
-    "jest": "^29.7.0"
+    "eslint-plugin-jest": "^27.6.0"
   }
 }

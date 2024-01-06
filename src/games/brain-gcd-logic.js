@@ -23,10 +23,10 @@ const gcdCalc = (number1, number2) => {
 const generateRound = () => {
   const randomNumber1 = random(1, 100);
   const randomNumber2 = random(1, 100);
-  const questionGcd = `${randomNumber1} ${randomNumber2}`;
+  const question = `${randomNumber1} ${randomNumber2}`;
   const answer = String(gcdCalc(randomNumber1, randomNumber2));
 
-  return [questionGcd, answer];
+  return [question, answer];
 };
 
 export default () => {

@@ -1,7 +1,7 @@
 import random from '../utilities.js';
+import runEngine from '../index.js';
 
-export default () => {
-  const startPhraseEven = 'Answer "yes" if the number is even, otherwise answer "no"';
+const generateRound = () => {
   let answer = '';
   const currentRandomNumber = random(1, 100);
   if (currentRandomNumber % 2 === 0) {
@@ -9,7 +9,12 @@ export default () => {
   } else {
     answer = 'no';
   }
-  const questionEven = currentRandomNumber;
+  const question = currentRandomNumber;
 
-  return [startPhraseEven, questionEven, answer];
+  return [question, answer];
+};
+
+export default () => {
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no"';
+  runEngine(rules, generateRound);
 };

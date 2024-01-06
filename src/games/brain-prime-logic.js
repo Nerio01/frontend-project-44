@@ -1,4 +1,5 @@
 import random from '../utilities.js';
+import runEngine from '../index.js';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -12,8 +13,7 @@ const isPrime = (number) => {
   return true;
 };
 
-export default () => {
-  const startPhrasePrime = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const generateRound = () => {
   const generatedNumber = random(1, 100);
   const primeCheck = isPrime(generatedNumber);
   let answer = '';
@@ -22,6 +22,11 @@ export default () => {
   } else {
     answer = 'no';
   }
-  const questionPrime = `${generatedNumber}`;
-  return [startPhrasePrime, questionPrime, answer];
+  const question = `${generatedNumber}`;
+  return [question, answer];
+};
+
+export default () => {
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  runEngine(rules, generateRound);
 };

@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import random from '../utilities.js';
+import runEngine from '../index.js';
 
 const makeProgression = () => {
   const modifier = random(2, 10);
@@ -9,15 +10,19 @@ const makeProgression = () => {
   return slicedProgression;
 };
 
-export default () => {
-  const startPhraseProgression = 'What number is missing in the progression?';
+const generateRound = () => {
   const progression = makeProgression();
   const indexFromProgression = random((progression.length - 1), (progression.length - 1));
-  const numberFromProgression = progression[indexFromProgression];
+  const answer = String(progression[indexFromProgression]);
   const progressionForPlayer = [...progression];
   progressionForPlayer[indexFromProgression] = '..';
   const delimitedStringFromProgression = progressionForPlayer.join(' ');
-  const questionProgression = `${delimitedStringFromProgression}`;
+  const question = `${delimitedStringFromProgression}`;
 
-  return [startPhraseProgression, questionProgression, String(numberFromProgression)];
+  return [question, answer];
+};
+
+export default () => {
+  const rules = 'What number is missing in the progression?';
+  runEngine(rules, generateRound);
 };
